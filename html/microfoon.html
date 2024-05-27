@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Welkom op mijn gaming accessoires site! "
+  />
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+	<link rel="stylesheet" type="image/webp" href="assets/images/Logo.webp"/>
+	<title>Microfoon</title>
+</head>
+
+<body>
+	<header>
+        <nav>
+         <a href="index.html"><img src="assets/images/Logo.webp" alt="logo"></a>    
+         <li class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Zoeken...">
+                <button type="submit">Zoek</button>
+            </form>
+        </li>
+
+
+            <ul class="navi">
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">producten</a></li>
+                <li><a href="klanten.html">klanten</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inleiding">
+            <article>
+                <h2>YNS Gaming Microfoon</h2> 
+                <p>De YNS Gaming Microfoon tilt je game-ervaring naar een hoger niveau door een verfijnde audiokwaliteit te leveren, waarmee je stem met uitzonderlijke helderheid wordt vastgelegd. Met superieure audioprestaties benadrukt deze microfoon de nuances van je stem, waardoor elk detail duidelijk overkomt. Het doelgerichte geluid minimaliseert ongewenste achtergrondgeluiden, waardoor je stem helder en onvervormd blijft voor een naadloze communicatie. Het robuuste en elegante ontwerp garandeert duurzame prestaties en voegt een vleugje verfijning toe aan je gaming-setup. De eenvoudige installatie maakt direct gebruik mogelijk, zonder ingewikkelde procedures. Of je nu aan het streamen bent, met teamgenoten communiceert, of je stem wilt vastleggen, past de YNS Gaming Microfoon zich moeiteloos aan elke situatie aan.</p>
+                <button class="btn">Toevoegen aan winkelmandje</button>
+                <a href="shop.html"><button class="btn">Bekijk andere producten</button></a>
+         </article>
+         <article>
+            <img class="imgproducten" src="assets/images/microfoon.webp" alt="" >
+            <h3>€69,99</h3>
+         </article>
+        </section>
+
+        <section class="reviews">
+            <article>
+                <h2>Reviews</h2>
+               <h4>Mo: ★★★★★  </h4>
+               <p>De YNS USB-microfoon heeft mijn streamingervaring naar een hoger niveau getild. Het is verbazingwekkend eenvoudig in te stellen, sluit gewoon de USB-kabel aan en je bent klaar om te gaan. De geluidskwaliteit is verbluffend helder, waardoor mijn stem duidelijk en professioneel klinkt tijdens mijn streams.</p> <br>
+               <h4>Anoniem: ★★★★☆  </h4> 
+               <p>De YNS-microfoon biedt zeker goede geluidskwaliteit voor zijn prijs. Het installatieproces is eenvoudig, maar het monteren van de verstelbare arm en het popfilter vergt wat tijd en geduld. Eenmaal gemonteerd, blijven ze echter stevig op hun plaats en verbeteren ze de prestaties van de microfoon aanzienlijk.</p>
+            </article>
+        </section>
+
+        <section class="reviewsformulier">
+            <article>
+                <h2>Plaats een Review</h2>
+                <form action="" method="post" id="reviewForm">
+                    <label for="reviewerName">Naam:</label>
+                    <input type="text" id="reviewerName" name="reviewerName" required><br>
+
+                    <label for="reviewStars">Beoordeling:</label>
+                    <select id="reviewStars" name="reviewStars" required>
+                        <option value="1">★</option>
+                        <option value="2">★★</option>
+                        <option value="3">★★★</option>
+                        <option value="4">★★★★</option>
+                        <option value="5">★★★★★</option>
+                    </select><br>
+
+                    <label for="reviewMessage">Bericht:</label><br>
+                    <textarea id="reviewMessage" name="reviewMessage" rows="4" cols="50" required></textarea><br>
+
+                    <button type="submit">Verstuur Review</button>
+                </form>
+            </article>
+        </section>
+
+
+    </main>
+
+    <aside id="cart-and-wishlist">
+        <h2>Winkelmandje</h2>
+        <p id="cart-items">    
+            <p id="total-price">Totaal: €0,00</p> <br>
+            
+        </p>
+       
+        <h2>Wishlist: </h2>
+            <ul id="wishlist-items"></ul>
+    </aside>
+
+    <footer class="footer">
+        <section class="container">
+              <article class="footer-col">
+                  <h4>Contact</h4>
+                  <ul>
+                    <li>- YNS GAMING </li>
+                    <li>- Vooruitgangstraat 49 , 9140 TEMSE</a></li>
+                    <li><a href="mailto:ynsgaming@info.be">- e-mail:  ynsgaming@info.be</a></li> 
+                    <li>- tel: +32 432 / 45 43 89 </li>
+                    <li><img src="/assets/images/betaalmethoden.webp" alt=""></li>
+                  </ul>
+              </article>
+        
+      
+              <article class="social-links">
+                  <h4>Volg ons</h4>
+                  <ul>
+                      <li><a href="www.instagram.com/ynsgaming"><img src="/assets/images/instagram.png" alt=""></a></li>
+                      <li><a href="wwww.twitter.com/ynsgaming"><img src="/assets/images/xlogo.png" alt="" ></a></li>
+                  </ul>
+              </article>
+          </section>
+      </footer>
+</body>
+</html>

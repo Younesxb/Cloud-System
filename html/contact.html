@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welkom op mijn gaming accessoires site!">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./js/leaflet.js" defer></script>
+    <link rel="stylesheet" type="image/webp" href="assets/images/Logo.webp"/>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <a href="index.html"><img src="assets/images/Logo.webp" alt="logo"></a>    
+            <li class="search-bar">
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Zoeken...">
+                    <button type="submit">Zoek</button>
+                </form>
+            </li>
+        
+            <ul class="navi">
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">producten</a></li>
+                <li><a href="klanten.html">klanten</a></li>
+                <li><a href="contact.html">contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>  
+
+        <section class="banner">
+            <h2>Contact</h2>
+        </section>
+
+       <section id="contact">
+            <article >
+              <div id="map"></div><br>
+                <form action="mailto:ynsgaming@info.be" method="post" class="contactform" id="contactform">
+                    <label for="name">Naam<span>*</span></label><br />
+                    <input type="text" name="name" id="name" /><br />
+                    <label for="email">Email<span>*</span></label><br />
+                    <input type="email" name="email" id="email" /><br />
+                    <label for="message">Bericht<span>*</span></label><br />
+                    <textarea name="message" id="message" rows="6"></textarea><br />
+                    <input type="submit" value="Send" class="contactbtn" />
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <aside>
+        <button class="btn"> <a href="overons.html">Over ons</a></button>
+    </aside>
+
+    <footer class="footer">
+        <section class="container">
+              <article class="footer-col">
+                  <h4>Contact</h4>
+                  <ul>
+                    <li>- YNS GAMING </li>
+                    <li>- Vooruitgangstraat 49 , 9140 TEMSE</a></li>
+                    <li><a href="mailto:ynsgaming@info.be">- e-mail:  ynsgaming@info.be</a></li> 
+                    <li>- tel: +32 432 / 45 43 89 </li>
+                    <li><img src="/assets/images/betaalmethoden.webp" alt="betaalmethoden"></li>
+                  </ul>
+              </article>
+        
+      
+              <article class="social-links">
+                  <h4>Volg ons</h4>
+                  <ul>
+                      <li><a href="www.instagram.com/ynsgaming"><img src="/assets/images/instagram.png" alt="logoinstagram" ></a></li>
+                      <li><a href="wwww.twitter.com/ynsgaming"><img src="/assets/images/xlogo.png" alt="logotwitter" ></a></li>
+                  </ul>
+              </article>
+          </section>
+      </footer>
+</body>
+</html>
+

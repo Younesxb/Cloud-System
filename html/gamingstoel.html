@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Welkom op mijn gaming accessoires site! "
+  />
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+	<link rel="stylesheet" type="image/webp" href="assets/images/Logo.webp"/>
+	<title>Gaming stoel</title>
+</head>
+
+<body>
+	<header>
+        <nav>
+         <a href="index.html"><img src="assets/images/Logo.webp" alt="logo"></a>    
+         <li class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Zoeken...">
+                <button type="submit">Zoek</button>
+            </form>
+        </li>
+
+
+            <ul class="navi">
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">producten</a></li>
+                <li><a href="klanten.html">klanten</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inleiding">
+            <article>
+                <h2>YNS Gaming Stoel</h2> 
+                <p>De YNS Gaming Stoel is een meesterlijke combinatie van comfort en stijl, ontworpen om je gaming-ervaring te verbeteren. Deze stoel is niet zomaar een zitplaats; het is een ergonomisch meesterwerk dat afgestemd is op de behoeften van de veeleisende gamer. Met zijn verstelbare functies, waaronder rugleuning, armleuningen en hoogte, kun je de stoel aanpassen aan jouw voorkeuren en de ideale positie vinden voor lange gaming-sessies. De ergonomische vormgeving ondersteunt een gezonde zithouding, wat essentieel is om vermoeidheid en ongemak te verminderen.</p>
+                <button class="btn">Toevoegen aan winkelmandje</button>
+                <a href="shop.html"><button class="btn">Bekijk andere producten</button></a>
+         </article>
+         <article>
+            <img class="imgproducten" src="assets/images/gamingstoel.webp" alt="" >
+            <h3>€69,99</h3>
+         </article>
+        </section>
+
+        <section class="reviews">
+            <article>
+                <h2>Reviews</h2>
+               <h4>Anoniem: ★★★★★  </h4>
+               <p>De YNS Gamingstoel biedt een solide prijs-kwaliteitverhouding voor gamers die op zoek zijn naar comfort zonder de bank te breken. De stoel heeft een ergonomisch ontwerp en biedt voldoende ondersteuning tijdens het gamen.</p> <br>
+               <h4>Phil Foden: ★★★★☆  </h4> 
+               <p>De YNS Gamingstoel heeft mijn verwachtingen overtroffen als het gaat om comfort tijdens het gamen. De ergonomische vormgeving biedt uitstekende ondersteuning voor mijn rug en nek, waardoor ik me tijdens lange sessies comfortabel blijf voelen. De verstelbare functies maken het gemakkelijk om de perfecte positie te vinden, en de meegeleverde kussens zorgen voor extra comfort.</p>
+            </article>
+        </section>
+
+        <section class="reviewsformulier">
+            <article>
+                <h2>Plaats een Review</h2>
+                <form action="" method="post" id="reviewForm">
+                    <label for="reviewerName">Naam:</label>
+                    <input type="text" id="reviewerName" name="reviewerName" required><br>
+
+                    <label for="reviewStars">Beoordeling:</label>
+                    <select id="reviewStars" name="reviewStars" required>
+                        <option value="1">★</option>
+                        <option value="2">★★</option>
+                        <option value="3">★★★</option>
+                        <option value="4">★★★★</option>
+                        <option value="5">★★★★★</option>
+                    </select><br>
+
+                    <label for="reviewMessage">Bericht:</label><br>
+                    <textarea id="reviewMessage" name="reviewMessage" rows="4" cols="50" required></textarea><br>
+
+                    <button type="submit">Verstuur Review</button>
+                </form>
+            </article>
+        </section>
+
+
+
+    </main>
+
+    <aside id="cart-and-wishlist">
+        <h2>Winkelmandje</h2>
+        <p id="cart-items">    
+            <p id="total-price">Totaal: €0,00</p> <br>
+            
+        </p>
+       
+        <h2>Wishlist: </h2>
+            <ul id="wishlist-items"></ul>
+    </aside>
+
+    <footer class="footer">
+        <section class="container">
+              <article class="footer-col">
+                  <h4>Contact</h4>
+                  <ul>
+                    <li>- YNS GAMING </li>
+                    <li>- Vooruitgangstraat 49 , 9140 TEMSE</a></li>
+                    <li><a href="mailto:ynsgaming@info.be">- e-mail:  ynsgaming@info.be</a></li> 
+                    <li>- tel: +32 432 / 45 43 89 </li>
+                    <li><img src="/assets/images/betaalmethoden.webp" alt=""></li>
+                  </ul>
+              </article>
+        
+      
+              <article class="social-links">
+                  <h4>Volg ons</h4>
+                  <ul>
+                      <li><a href="www.instagram.com/ynsgaming"><img src="/assets/images/instagram.png" alt="" ></a></li>
+                      <li><a href="wwww.twitter.com/ynsgaming"><img src="/assets/images/xlogo.png" alt="" ></a></li>
+                  </ul>
+              </article>
+          </section>
+      </footer>
+</body>
+</html>

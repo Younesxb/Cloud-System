@@ -1,0 +1,980 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-areas: 'header header header' 'main main aside' 'footer footer footer';
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+.banner {
+    background-color: orange; 
+    padding: 1.25rem; 
+    text-align: center; 
+    width: 100%;
+}
+
+.banner:nth-child(3)
+{
+    background-color: white;
+}
+
+.banner h2 {
+    margin: 0; 
+    color: black;
+}
+
+#about {
+    display: flex;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    padding: 1.5rem;
+    text-align: left;
+    border: solid 0.1rem black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+ 
+}
+
+#about h2 {
+    text-align: left;
+}
+
+#about img {
+    border: solid 0.1rem black;
+    width: 40rem;
+}
+header {    
+    background-color: black;
+    color: #fff;
+    padding: 0.625rem 0;
+    grid-area: header;  
+    
+}
+
+header nav a img{
+    margin-left: 2rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.navi li {
+    display: inline;
+    margin-right: 1.25rem;
+}
+
+.navi a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.2rem;
+}
+
+.navi a:hover {
+    color: orange;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+}
+
+main h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 999;
+    text-align: center;
+ 
+}
+
+main h3 {
+
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+main img {
+    width: 25rem;
+}
+
+.inleiding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.inleiding article {
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    background-size: cover;
+    margin-top: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.inleiding article p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.inleiding article h2 {
+    text-align: left;   
+}   
+
+.inleiding article h3 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+
+.inleiding .btn {
+    width: 100%;
+}
+
+
+.inleiding article img {
+    display: block;
+        margin: 0 auto;
+    }
+
+
+
+
+
+.homepagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+
+.btn-cart {
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-wishlist {
+    width: 5rem;
+}
+
+
+
+.productenshop {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border: solid 0.1rem black;
+    box-shadow: 0 0 10px;
+    transition: 0.3s opacity, transform 0.3s;
+}
+
+.productenshop img:hover {
+     transform: scale(0.975);
+}
+
+.btn {
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.productenshop .btn {
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    border-left: solid 0.1rem black;
+    border-bottom: none;
+
+
+}
+
+aside address {
+    font-weight: bold;
+    text-align: left;
+    align-items: flex-start;
+}
+
+aside address ul li{
+    text-align: left;
+}
+
+aside h2 {
+    font-weight: bold;
+}
+aside ul {
+    list-style: none;
+    flex: 1;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 1.25rem 0;
+    border-top: solid 0.1rem black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0  1.25rem;
+    border: 0.1rem solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  
+}
+
+.footer-col h4 {
+    margin-bottom:  0.625rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 999;
+    
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    font-weight: 400;
+    
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  
+    
+}
+
+.social-links {
+    flex: 1;
+    padding: 0 0.625rem;
+    border: 0.1rem solid black;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+.social-links img {
+    width: 50px;
+}
+
+.social-links ul li {
+    display: inline-block;
+}
+
+.social-links h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 999;
+    text-transform: uppercase;
+}
+
+
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: auto;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .contactform h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.2rem;
+  }
+  .contactform label {
+    font-size: 0.9rem;
+  }
+  .contactform input,
+  .contactform textarea {
+    width: 50vw;
+    background: transparent;
+    border: 0;
+    border-bottom: solid 2px black;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  .contactform textarea {
+    margin-bottom: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .contactform .contactbtn {
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    border: solid 2px black;
+    padding: 0.4rem 0;
+  }
+  address {
+    color: black;
+  }
+  
+  #map { 
+    height: 180px; 
+}
+
+  .contactbtn:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+  
+
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+
+
+
+.inleiding article h2 {
+    font-weight: 999;
+    font-size: 2rem;
+}
+
+.inleiding h3 {
+    text-align: center;
+}
+
+.inleiding img {
+    width: 20rem;
+}
+
+#map {
+    height: 20vh;
+    width: auto;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+   }
+
+   .portfolio-item {
+     padding: 0 0.5rem 2rem 0;
+ 
+
+   }
+   .portfolio-item h2 {
+     color: black;
+     font-size: 1rem;
+     font-weight: 999;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 0 0 1rem 1.5rem;
+   }
+
+   .portfolio-item h3 {
+    color: black;
+    font-size: 1rem;
+    border: solid 0.2rem black;
+    border-radius: 1rem;
+    font-weight: 999;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .portfolio-item h3:hover {
+    background-color: orange;
+  }
+
+   .portfolio-item img {
+    
+     height: auto;
+     transition: 0.3s opacity, transform 0.3s;
+   }
+   .portfolio-item img:hover {
+     opacity: 0.7;
+     transform: scale(0.975);
+   }
+
+   .btn-added {
+    background-color: orange !important;
+}
+
+#cart-items,
+#wishlist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+#cart-and-wishlist h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+#cart-items li,
+#wishlist-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.btn-remove {
+    margin-left: 10px;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 5px; 
+}
+
+#cart-and-wishlist h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-wishlist.btn-added {
+    background-color: orange;
+}
+
+/*KLANTEN*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+
+
+.customer-card {
+    width: 33%;
+    
+
+}
+
+.search-bar {
+    display: none;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+   
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.search-bar button {
+    padding: 8px 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.search-bar button:hover {
+    padding: 8px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    border-top: 0.1rem black solid;
+}
+
+.reviews article {
+        padding: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        background-size: cover;
+        margin-top: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+}
+
+.reviews article p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.reviews article h2 {
+    text-align: left;   
+}   
+
+.reviews article h4 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.reviewsformulier {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.reviewsformulier article {
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.reviewsformulier form {
+    width: 100%;
+}
+
+.reviewsformulier label,
+.reviewsformulier textarea,
+.reviewsformulier select,
+.reviewsformulier button {
+    width: 100%;
+}
+
+
+    @media (max-width: 620px) {
+        body, html {
+            grid-template-areas: 'header' 'main' 'aside' 'footer';
+            font-size: 0.9rem;
+        }
+        .inleiding{
+                display: flex;
+                justify-content: center;
+         }
+        header {
+            grid-area: header;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header nav a img{
+            margin-left: 0rem;
+        }
+        
+
+        
+
+        nav {
+            grid-area: header;
+            flex-direction: column;
+            font-size: 0.6rem;
+        }
+
+        nav .zoeken {
+            display: none;
+        }
+
+        .navi li {
+            padding: 1rem;
+        }
+
+
+
+        main {
+            grid-area: main;
+        }
+
+        main h3 {
+            font-weight: 1;
+            font-size: 0.1rem;
+            line-height: 3rem;
+
+        }
+
+
+        aside {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-left: none;
+        }
+
+        aside ul li .btn {
+            margin-left: 0; 
+        }
+
+        aside ul li .btn {
+            font-size: 0.8rem; 
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+      
+        .footer-col h4 {
+            margin-bottom: 10px;
+            font-size: 0.7rem;
+            font-weight: 999;
+            text-transform: uppercase;
+        }
+
+        .social-links h4 {
+            margin-bottom: 10px;
+            font-size: 0.7rem;
+            font-weight: 999;
+            text-transform: uppercase;
+        }
+
+        .footer-col ul {
+            font-weight: 100;
+        }
+        
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 3rem;
+        
+        }
+        
+        
+        
+        .customer-card {
+            width: 33%;
+        
+        }
+
+        #about {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #about img {
+        width: 10rem;
+        }
+    
+
+        .contact-form {
+            width: 40%; 
+        }
+
+        .productenshop {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .btn-cart {
+            width: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        
+        .btn-wishlist {
+            width: 2rem;
+        }
+
+        .productenshop img {
+            height: auto;
+        }
+
+        .contact-form {
+            width: 100%; 
+        }
+
+        .homepagina .productenshop .btn {
+            width: 40%; 
+            margin-bottom: 1rem; 
+        }
+    }
+
+@media (min-width: 502px) and (max-width: 767px) {
+    body, html {
+        grid-template-areas: 'header' 'main' 'aside' 'footer';
+    }
+        .inleiding{
+            display: flex;
+        }
+    header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        grid-area: header;
+        flex-direction: column;
+        font-size: 0.6rem;
+    }
+
+    nav .zoeken {
+        display: none;
+    }
+
+    .navi li {
+        padding: 1rem;
+    }
+
+
+
+    main {
+        grid-area: main;
+    }
+
+
+    aside {
+        display: flex;
+           justify-content: center;
+           align-items: center;
+    }
+
+    aside ul li .btn {
+        margin-left: 0; 
+    }
+
+    aside ul li .btn {
+        font-size: 0.8rem; 
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+
+    .footer-col h4 {
+        margin-bottom: 10px;
+        font-size: 0.7rem;
+        font-weight: 999;
+        text-transform: uppercase;
+    }
+
+    .social-links h4 {
+        margin-bottom: 10px;
+        font-size: 0.7rem;
+        font-weight: 999;
+        text-transform: uppercase;
+    }
+
+    .footer-col ul {
+        font-weight: 100;
+    }
+    
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #about img {
+    width: 15rem;
+    }
+
+  
+   
+
+    .contact-form {
+        width: 40%; 
+    }
+
+    .productenshop {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn-cart {
+        width: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .btn-wishlist {
+        width: 2rem;
+    }
+
+    .productenshop img {
+        height: auto;
+    }
+
+    .contact-form {
+        width: 100%; 
+    }
+
+    .homepagina .productenshop .btn {
+        width: 30%; 
+        margin-bottom: 1rem; 
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 950px  ) {
+    body,
+    html,
+    .contactpagina {
+        display: grid;
+        grid-template-areas: 'header' 'main' 'aside' 'footer';
+    }
+
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        grid-area: header;
+        flex-direction: column;
+        
+       
+    }
+
+    .navi li {
+        padding: 1rem;
+    }
+
+    aside {
+        border: none;
+    }
+
+    aside ul {
+        width: 100%;
+        display: inline-flex;
+        border: none;
+    }
+
+   
+
+    footer {
+        grid-area: footer;
+      
+    }
+
+  
+
+    .homepagina {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .productenshop {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .productenshop img {
+        height: auto;
+    }
+
+    .contact-form {
+        width: 100%; 
+    }
+}
+
+
+
