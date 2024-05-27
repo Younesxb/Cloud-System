@@ -5,8 +5,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - .:/var/www/html
-    restart: unless-stopped
+      - .:/var/www/html:ro
   db:
     image: mariadb:latest
     environment:
@@ -16,4 +15,3 @@ services:
       MYSQL_PASSWORD: Younes22
     ports:
       - "3306:3306"
-    restart: unless-stopped
