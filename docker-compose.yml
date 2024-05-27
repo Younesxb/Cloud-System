@@ -12,14 +12,5 @@ services:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: YNSGaming
       MYSQL_USER: root
-      MYSQL_PASSWORD: Younes22
-    ports:
-      - "3306:3306"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2.5.0
 
